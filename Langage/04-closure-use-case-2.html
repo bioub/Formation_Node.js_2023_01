@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function createButton(msg) {
+      const btnEl = document.createElement('button');
+      btnEl.innerText = msg;
+      btnEl.addEventListener('click', () => {
+        console.log(msg);
+      });
+      document.body.appendChild(btnEl);
+    }
+
+    createButton('Value 1');
+    createButton('Value 2');
+    createButton('Value 3');
+
+    // function getDataFromServer(url) {
+    //   ajax(url, (data) => {
+    //     // url est sauvegardée (closure)
+    //   })
+    // }
+
+    // pile d'appel
+    // de fonction
+    // ^
+    // |
+    // |
+    // |                                                                 lg
+    // |createButton - createButton - createButton                       =>
+    // +-----------------------------------------------------------------click value 1--------> temps
+    //
+  </script>
+</body>
+</html>
