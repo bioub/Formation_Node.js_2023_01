@@ -42,9 +42,9 @@
 // de fonction
 // ^
 // |
-// |
 // |                               lg                           lg                           lg
-// |for { i=0 setTimeout           =>, i=1 setTimeout           =>, i=2 setTimeout           => } i=3
+// |                               =>                           =>                           =>
+// |for { i=0 mySetTimeout            ; i=1 mySetTimeout           ; i=2 mySetTimeout            } i=3
 // +-------------------------------1s---------------------------2s---------------------------3s----> temps
 //                                 0                            1                            2
 
