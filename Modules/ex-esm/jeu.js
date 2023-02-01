@@ -1,8 +1,7 @@
-const readline = require('readline');
-const { getRandomInt } = require('./random');
-// importer Random ou directement getRandomInt
+import readline from 'readline';
+import { getRandomInt } from './random.js';
 
-class Jeu {
+export default class Jeu {
   /**
    * @param {object} options
    * @param {number} options.min
@@ -51,5 +50,3 @@ class Jeu {
   }
 }
 
-// exporter Jeu
-module.exports = Jeu;

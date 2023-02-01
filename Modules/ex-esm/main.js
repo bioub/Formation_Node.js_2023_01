@@ -1,6 +1,4 @@
-// importer Jeu
-
-const Jeu = require("./jeu");
+import Jeu from "./jeu.js";
 
 const game = new Jeu();
 game.jouer();
