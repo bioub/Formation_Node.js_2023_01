@@ -19,6 +19,8 @@ console.log(typeof Math.sum); // undefined
 
 // Pour créer des objets on peut
 // le créer directement avec la syntaxe object literal
+// si l'objet est simple à créer
+// s'il est instancié plusieurs fois, ne pas mettre de méthodes
 
 const coords = {
   x: 1,

@@ -60,3 +60,13 @@ function jouer() {
 const entierAlea = getRandomInt(0, 100);
 const essais = [];
 jouer();
+
+
+// pile d'appel
+// de fonction
+// ^
+// |                                         question                       question
+// |question                                 jouer                          jouer
+// |jouer    ..⟳..                           =>       ..⟳..                 =>
+// +-----------------------------------------ENTREE-------------------------ENTREE----------------------------------> temps
+//

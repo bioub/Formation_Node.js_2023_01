@@ -9,15 +9,18 @@ names.forEach((n) => {
   console.log(hello(n));
 });
 
+console.log('FIN');
+
+
 // pile d'appel
 // de fonction
 // ^
 // |
 // |                       lg                   lg                 lg
 // |for { i=0,el=Charline  => ; i=1,el=Florian  =>; i=2,el=Romain  => }
-// |forEach
+// |forEach                                                                  lg
 // +-----------------------------------------------------------------------------------------> temps
-//                         CHARLINE             FLORIAN            ROMAIN
+//                         CHARLINE             FLORIAN            ROMAIN    FIN
 
 // Callback synchrone (appelée tout de suite)
 // appelée par la fonction à laquelle vous l'avez passé (ici forEach)

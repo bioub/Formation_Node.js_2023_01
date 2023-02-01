@@ -16,14 +16,14 @@ console.log('E');
 // |
 // |                                                                lg                   lg  lg                   lg
 // |setTimeout - setTimeout - setTimeout - setTimeout - lg ..⟳..    cbB ..⟳..            cbA cbD ..⟳..            cbC
-// +-------------0----------------------------------------------------------------------------------------------------> temps
+// +-------------0--------------------------------------------------7--------------------500--502----------------------------> temps
 //                                                      E           B                    A   D                    C
 
 
 // file d'attente de timer (0ms) : cbB
 
 
-// coté C++ dans Node.js
+// coté C++ dans Node.js (Event Loop)
 // do {
 //   runJS();
 // } while(thereIsCallbackInQueue());
