@@ -21,10 +21,14 @@ async function rmAndMkdir(distPath) {
 }
 
 async function buildJs() {
-  const bufferHorloge = await fs.readFile(horlogeJsPath);
-  const bufferIndex = await fs.readFile(indexJsPath);
+  // Ici on lit d'abord horloge puis index
+  // const bufferHorloge = await fs.readFile(horlogeJsPath);
+  // const bufferIndex = await fs.readFile(indexJsPath);
+  // let bufferOrStr = Buffer.concat([bufferHorloge, bufferIndex]);
 
-  let bufferOrStr = Buffer.concat([bufferHorloge, bufferIndex]);
+  // Ici on lit horloge et index en même temps
+  const buffers = await Promise.all([fs.readFile(horlogeJsPath), fs.readFile(indexJsPath)]);
+  let bufferOrStr = Buffer.concat(buffers);
 
   if (argv.minify) {
     const { code } = await minify(bufferOrStr.toString('utf-8'));
