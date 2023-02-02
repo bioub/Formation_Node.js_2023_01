@@ -13,4 +13,4 @@ console.log(path.dirname(nodePath));
 console.log(path.dirname(path.dirname(nodePath)));
 
 console.log(path.join('uploads', imagePath)); // uploads/logo.png (relatif)
-console.log(path.resolve('uploads', imagePath)); // uploads/logo.png (absolu par rapport au CWD)
+console.log(path.resolve('uploads', imagePath)); // /Users/romain/Desktop/Formation/Node.js/uploads/logo.png (absolu par rapport au CWD)

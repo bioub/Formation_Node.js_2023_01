@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "Node.js"
+		},
+		{
+			"path": "Exercice-Build"
 		}
 	],
 	"settings": {}
