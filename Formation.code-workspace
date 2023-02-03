@@ -11,7 +11,12 @@
 		},
 		{
 			"path": "Exercice-Build"
+		},
+		{
+			"path": "Express"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Express"
+	}
 }
